@@ -1,0 +1,100 @@
+[
+  {
+    "word": "intruder",
+    "definitions": [
+      {
+        "meaning": "Someone who enters a place without permission, often with criminal intent such as trespassing or burglary.",
+        "tags": ["noun", "crime"]
+      },
+      {
+        "meaning": "An unauthorized person or entity gaining access to a computer network or system.",
+        "tags": ["noun", "cybersecurity"]
+      },
+      {
+        "meaning": "An unwelcome person, idea, or presence.",
+        "tags": ["general"]
+      }
+    ],
+    "favorite": false
+  },
+  {
+    "word": "wandering",
+    "definitions": [
+      {
+        "meaning": "Moving without a definite course; often lost, unfocused, or aimless.",
+        "tags": ["verb", "adjective"]
+      }
+    ],
+    "favorite": false
+  },
+  {
+    "word": "roaming",
+    "definitions": [
+      {
+        "meaning": "Moving freely over a wide area, often with exploration or a general purpose.",
+        "tags": ["verb"]
+      }
+    ],
+    "favorite": false
+  },
+  {
+    "word": "brutal",
+    "definitions": [
+      {
+        "meaning": "Extremely cruel, harsh, or violent.",
+        "tags": ["adjective"]
+      },
+      {
+        "meaning": "Very harsh, difficult, or unpleasant.",
+        "tags": ["adjective"]
+      },
+      {
+        "meaning": "Unfeeling or lacking compassion.",
+        "tags": ["adjective"]
+      }
+    ],
+    "favorite": false
+  },
+  {
+    "word": "pledged",
+    "definitions": [
+      {
+        "meaning": "To have made a formal and serious promise.",
+        "tags": ["verb"]
+      },
+      {
+        "meaning": "To offer something valuable as security for a loan or commitment.",
+        "tags": ["finance", "verb"]
+      }
+    ],
+    "favorite": false
+  },
+  {
+    "word": "starving",
+    "definitions": [
+      {
+        "meaning": "Suffering from starvation; severely affected by lack of food.",
+        "tags": ["adjective"]
+      },
+      {
+        "meaning": "Very hungry (used hyperbolically).",
+        "tags": ["informal"]
+      }
+    ],
+    "favorite": false
+  },
+  {
+    "word": "appealing",
+    "definitions": [
+      {
+        "meaning": "Attractive or interesting.",
+        "tags": ["adjective"]
+      },
+      {
+        "meaning": "Showing or expressing a desire for help or sympathy.",
+        "tags": ["adjective", "emotional"]
+      }
+    ],
+    "favorite": false
+  }
+]
