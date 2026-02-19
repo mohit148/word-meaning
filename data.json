@@ -1,100 +1,1596 @@
-[
-  {
-    "word": "intruder",
-    "definitions": [
-      {
-        "meaning": "Someone who enters a place without permission, often with criminal intent such as trespassing or burglary.",
-        "tags": ["noun", "crime"]
-      },
-      {
-        "meaning": "An unauthorized person or entity gaining access to a computer network or system.",
-        "tags": ["noun", "cybersecurity"]
-      },
-      {
-        "meaning": "An unwelcome person, idea, or presence.",
-        "tags": ["general"]
-      }
-    ],
-    "favorite": false
+{
+  "categories": {
+    "general": {
+      "Important": [
+        {
+          "word": "about",
+          [cite_start]"definition": "Common preposition used in English[cite: 13]."
+        },
+        {
+          "word": "above",
+          [cite_start]"definition": "Common preposition used in English[cite: 13]."
+        },
+        {
+          "word": "across",
+          [cite_start]"definition": "Common preposition used in English[cite: 14]."
+        },
+        {
+          "word": "after",
+          [cite_start]"definition": "Common preposition used in English[cite: 14]."
+        },
+        {
+          "word": "against",
+          [cite_start]"definition": "Common preposition used in English[cite: 15]."
+        },
+        {
+          "word": "along",
+          [cite_start]"definition": "Preposition describing movement from one part of a road or river to another[cite: 15, 72848]."
+        },
+        {
+          "word": "among",
+          [cite_start]"definition": "Common preposition used in English[cite: 16]."
+        },
+        {
+          "word": "around",
+          [cite_start]"definition": "Common preposition used in English[cite: 16]."
+        },
+        {
+          "word": "as",
+          [cite_start]"definition": "Common preposition used in English[cite: 17]."
+        },
+        {
+          "word": "at",
+          [cite_start]"definition": "Common preposition used in English[cite: 17]."
+        },
+        {
+          "word": "before",
+          [cite_start]"definition": "Common preposition used in English[cite: 18]."
+        },
+        {
+          "word": "behind",
+          [cite_start]"definition": "Preposition or adverb meaning in or toward the back; in a delayed manner[cite: 18, 72945]."
+        },
+        {
+          "word": "below",
+          [cite_start]"definition": "Common preposition used in English[cite: 19]."
+        },
+        {
+          "word": "beneath",
+          [cite_start]"definition": "Common preposition used in English[cite: 19]."
+        },
+        {
+          "word": "beside",
+          [cite_start]"definition": "Common preposition used in English[cite: 20]."
+        },
+        {
+          "word": "between",
+          [cite_start]"definition": "Common preposition used in English[cite: 20]."
+        },
+        {
+          "word": "beyond",
+          [cite_start]"definition": "Common preposition used in English[cite: 21]."
+        },
+        {
+          "word": "by",
+          [cite_start]"definition": "Common preposition used in English[cite: 21]."
+        },
+        {
+          "word": "despite",
+          [cite_start]"definition": "Common preposition used in English[cite: 22]."
+        },
+        {
+          "word": "down",
+          [cite_start]"definition": "Common preposition used in English[cite: 22]."
+        },
+        {
+          "word": "during",
+          [cite_start]"definition": "Common preposition used in English[cite: 23]."
+        },
+        {
+          "word": "except",
+          [cite_start]"definition": "Common preposition used in English[cite: 23]."
+        },
+        {
+          "word": "for",
+          [cite_start]"definition": "Common preposition used in English[cite: 24]."
+        },
+        {
+          "word": "from",
+          [cite_start]"definition": "Common preposition used in English[cite: 24]."
+        },
+        {
+          "word": "inside",
+          [cite_start]"definition": "Common preposition used in English[cite: 25]."
+        },
+        {
+          "word": "into",
+          [cite_start]"definition": "Common preposition used in English[cite: 25]."
+        },
+        {
+          "word": "like",
+          [cite_start]"definition": "Common preposition used in English[cite: 26]."
+        },
+        {
+          "word": "near",
+          [cite_start]"definition": "Common preposition used in English[cite: 26]."
+        },
+        {
+          "word": "of",
+          [cite_start]"definition": "Common preposition used in English[cite: 27]."
+        },
+        {
+          "word": "off",
+          [cite_start]"definition": "Common preposition used in English[cite: 27]."
+        },
+        {
+          "word": "on",
+          [cite_start]"definition": "Common preposition used in English[cite: 28]."
+        },
+        {
+          "word": "onto",
+          [cite_start]"definition": "Common preposition used in English[cite: 28]."
+        },
+        {
+          "word": "opposite",
+          [cite_start]"definition": "Common preposition used in English[cite: 29]."
+        },
+        {
+          "word": "out",
+          [cite_start]"definition": "Common preposition used in English[cite: 29]."
+        },
+        {
+          "word": "outside",
+          [cite_start]"definition": "Common preposition used in English[cite: 30]."
+        },
+        {
+          "word": "over",
+          [cite_start]"definition": "Common preposition used in English[cite: 31]."
+        },
+        {
+          "word": "past",
+          [cite_start]"definition": "Common preposition used in English[cite: 32]."
+        },
+        {
+          "word": "round",
+          [cite_start]"definition": "Common preposition used in English[cite: 32]."
+        },
+        {
+          "word": "since",
+          [cite_start]"definition": "Common preposition used in English[cite: 33]."
+        },
+        {
+          "word": "than",
+          [cite_start]"definition": "Common preposition used in English[cite: 33]."
+        },
+        {
+          "word": "through",
+          [cite_start]"definition": "Common preposition used in English[cite: 34]."
+        },
+        {
+          "word": "to",
+          [cite_start]"definition": "Common preposition used in English[cite: 34]."
+        },
+        {
+          "word": "toward",
+          [cite_start]"definition": "Common preposition used in English[cite: 35]."
+        },
+        {
+          "word": "under",
+          [cite_start]"definition": "Common preposition used in English[cite: 35]."
+        },
+        {
+          "word": "underneath",
+          [cite_start]"definition": "Position directly under or below and usually hidden by something else[cite: 36, 72803]."
+        },
+        {
+          "word": "unlike",
+          [cite_start]"definition": "Common preposition used in English[cite: 36]."
+        },
+        {
+          "word": "until",
+          [cite_start]"definition": "Common preposition used in English[cite: 37]."
+        },
+        {
+          "word": "up",
+          [cite_start]"definition": "Common preposition used in English[cite: 37]."
+        },
+        {
+          "word": "upon",
+          [cite_start]"definition": "Common preposition used in English[cite: 38]."
+        },
+        {
+          "word": "via",
+          [cite_start]"definition": "Common preposition used in English[cite: 38]."
+        },
+        {
+          "word": "with",
+          [cite_start]"definition": "Common preposition used in English[cite: 39]."
+        },
+        {
+          "word": "within",
+          [cite_start]"definition": "Common preposition used in English[cite: 39]."
+        },
+        {
+          "word": "without",
+          [cite_start]"definition": "Common preposition used in English[cite: 40]."
+        },
+        {
+          "word": "crippled",
+          [cite_start]"definition": "To seriously damage or harm someone so they are no longer able to walk or move[cite: 101, 72679]."
+        },
+        {
+          "word": "convenient",
+          [cite_start]"definition": "Fitting in well with a person's needs, activities, and plans; involving little trouble[cite: 72680, 72947]."
+        },
+        {
+          "word": "minimal",
+          [cite_start]"definition": "Adjective describing an amount, quantity, or degree that is negligible or the slightest[cite: 72686]."
+        },
+        {
+          "word": "bother",
+          [cite_start]"definition": "To disturb, annoy, or worry someone; to make the effort to do something[cite: 72686]."
+        },
+        {
+          "word": "distinguish",
+          [cite_start]"definition": "To recognize or treat someone or something as different; to manage to discern[cite: 72690]."
+        },
+        {
+          "word": "fascinating",
+          [cite_start]"definition": "Extremely interesting and holding one's interest[cite: 72693, 72835]."
+        },
+        {
+          "word": "either",
+          [cite_start]"definition": "Conjunction/adverb used before the first of two alternatives or to indicate a link with a previous statement[cite: 72694]."
+        },
+        {
+          "word": "overwhelming",
+          [cite_start]"definition": "Something so intense, large, or strong that it is difficult to handle, fight, or process[cite: 72699]."
+        },
+        {
+          "word": "persistent",
+          [cite_start]"definition": "Continuing or lasting in spite of difficulty or opposition[cite: 72700]."
+        },
+        {
+          "word": "intimidating",
+          [cite_start]"definition": "Making you feel frightened or nervous[cite: 72701]."
+        },
+        {
+          "word": "accommodate",
+          [cite_start]"definition": "To provide lodging or sufficient space for; to fit in with the wishes or needs of[cite: 72702]."
+        },
+        {
+          "word": "cautious",
+          [cite_start]"definition": "Being careful to avoid potential danger or risk; alert in uncertain situations[cite: 72705]."
+        },
+        {
+          "word": "compromise",
+          [cite_start]"definition": "An agreement or settlement of a dispute that is reached by each side making concessions[cite: 72706]."
+        },
+        {
+          "word": "liberated",
+          [cite_start]"definition": "No longer having any limits or controls; freed from constraint[cite: 72707]."
+        },
+        {
+          "word": "intolerance",
+          [cite_start]"definition": "Lack of willingness to accept different ideas or beliefs; physical inability to tolerate certain substances[cite: 72709]."
+        },
+        {
+          "word": "deliberate",
+          [cite_start]"definition": "Done consciously and intentionally; moving, acting, or thinking slowly and carefully[cite: 72713, 33361]."
+        },
+        {
+          "word": "presence",
+          [cite_start]"definition": "State of being present; a noticeable quality or appearance that makes someone stand out[cite: 72714, 72718]."
+        },
+        {
+          "word": "intense",
+          [cite_start]"definition": "Existing or occurring in a high or extreme degree; extreme and forceful[cite: 72715]."
+        },
+        {
+          "word": "impresses",
+          [cite_start]"definition": "To cause someone to feel admiration or respect; to have a favorable effect on[cite: 72719]."
+        },
+        {
+          "word": "uplift",
+          [cite_start]"definition": "The act of raising something to a higher position or improving a person's moral condition[cite: 72721]."
+        },
+        {
+          "word": "inclusive",
+          [cite_start]"definition": "Including everything or all types of people; encompasses stated limits or extremes[cite: 72722]."
+        },
+        {
+          "word": "impressive",
+          [cite_start]"definition": "Having the ability to make a strong impression or inspire awe and respect[cite: 72723]."
+        },
+        {
+          "word": "complicate",
+          [cite_start]"definition": "To make something more difficult to deal with, do, or understand[cite: 72724]."
+        },
+        {
+          "word": "tailgating",
+          [cite_start]"definition": "Driving too closely behind another vehicle[cite: 72724]."
+        },
+        {
+          "word": "pedestrian",
+          [cite_start]"definition": "A person walking rather than traveling in a vehicle; lacking inspiration or excitement[cite: 72725]."
+        },
+        {
+          "word": "neglected",
+          [cite_start]"definition": "Not receiving enough care or attention[cite: 72726]."
+        },
+        {
+          "word": "existent",
+          [cite_start]"definition": "Something real or currently in existence; existing now[cite: 72728]."
+        },
+        {
+          "word": "inconvenience",
+          [cite_start]"definition": "Something that causes trouble, difficulty, or annoyance[cite: 72728]."
+        },
+        {
+          "word": "convenience",
+          [cite_start]"definition": "The state of being easy, useful, or suitable; something that provides comfort[cite: 72729]."
+        },
+        {
+          "word": "prevent",
+          [cite_start]"definition": "To stop something from happening or someone from doing something[cite: 72730]."
+        },
+        {
+          "word": "elderly",
+          [cite_start]"definition": "Term used to describe people who are older, especially past middle age[cite: 72731]."
+        },
+        {
+          "word": "infuriating",
+          [cite_start]"definition": "Extremely annoying, causing great anger or outrage[cite: 72732, 72862]."
+        },
+        {
+          "word": "priorities",
+          [cite_start]"definition": "Matters considered more important than others and that should be dealt with first[cite: 72734]."
+        },
+        {
+          "word": "empathy",
+          [cite_start]"definition": "Ability to understand and share the feelings of another person[cite: 72735]."
+        },
+        {
+          "word": "willpower",
+          [cite_start]"definition": "Ability to control your thoughts, emotions, and actions to achieve long-term goals[cite: 72736]."
+        },
+        {
+          "word": "honk",
+          [cite_start]"definition": "Short, loud sound made by a goose or car horn[cite: 72737]."
+        },
+        {
+          "word": "failure",
+          [cite_start]"definition": "The lack of success; translation of 'na-kaami'[cite: 72737]."
+        },
+        {
+          "word": "giant",
+          [cite_start]"definition": "A very large person or thing; extremely large[cite: 72739]."
+        },
+        {
+          "word": "compromised",
+          [cite_start]"definition": "Damaged, weakened, or made vulnerable (e.g., by unauthorized access)[cite: 72741]."
+        },
+        {
+          "word": "vulnerable",
+          [cite_start]"definition": "Exposed to the possibility of being attacked or harmed, physically or emotionally[cite: 72741, 72760, 68419]."
+        },
+        {
+          "word": "universally",
+          [cite_start]"definition": "In a way that exists everywhere or involves everyone[cite: 72744]."
+        },
+        {
+          "word": "absence",
+          [cite_start]"definition": "The state of not being present; a lack of something expected or needed[cite: 72744]."
+        },
+        {
+          "word": "escalation",
+          [cite_start]"definition": "A rapid increase or rise; an intensification of intensity or seriousness[cite: 72747]."
+        },
+        {
+          "word": "relevant",
+          [cite_start]"definition": "Closely connected or appropriate to what is being done or considered[cite: 72748, 72876]."
+        },
+        {
+          "word": "reception",
+          [cite_start]"definition": "The process of receiving something; a formal social occasion; the way people react to someone[cite: 72749]."
+        },
+        {
+          "word": "decency",
+          [cite_start]"definition": "The quality of being polite, respectful, and ethical; acceptable behavior in society[cite: 72752]."
+        },
+        {
+          "word": "humiliated",
+          [cite_start]"definition": "Made to feel ashamed, embarrassed, or lowered in status or dignity[cite: 72753, 72871]."
+        },
+        {
+          "word": "persist",
+          [cite_start]"definition": "To continue steadfastly or exist past the usual time despite difficulties[cite: 72755, 39053]."
+        },
+        {
+          "word": "lash out",
+          [cite_start]"definition": "To hit or kick out at someone; to spend money extravagantly[cite: 72758]."
+        },
+        {
+          "word": "glorify",
+          [cite_start]"definition": "To praise or honor someone excessively; to make something seem more splendid than it is[cite: 72761]."
+        },
+        {
+          "word": "intended",
+          [cite_start]"definition": "Planned or meant for a particular purpose, person, or outcome[cite: 72765]."
+        },
+        {
+          "word": "perceived",
+          [cite_start]"definition": "To become aware of something through the senses or to understand it[cite: 72769]."
+        },
+        {
+          "word": "emphasizes",
+          [cite_start]"definition": "To give something special importance or attention, drawing focus to it[cite: 72770, 36737]."
+        },
+        {
+          "word": "horrible",
+          [cite_start]"definition": "Very unpleasant, bad, or disgusting; causing horror or dread[cite: 72773]."
+        },
+        {
+          "word": "striking",
+          [cite_start]"definition": "Very unusual or easily noticed; attractive[cite: 72782]."
+        },
+        {
+          "word": "resists",
+          [cite_start]"definition": "To fight against or actively oppose something[cite: 72792]."
+        },
+        {
+          "word": "rooted",
+          [cite_start]"definition": "Having developed from something; very strong and firmly fixed[cite: 72793]."
+        },
+        {
+          "word": "norms",
+          [cite_start]"definition": "Unspoken rules and standard behaviors shared by members of a social group[cite: 72795]."
+        },
+        {
+          "word": "amid",
+          [cite_start]"definition": "Preposition meaning in the middle of, surrounded by, or during[cite: 72795]."
+        },
+        {
+          "word": "approach",
+          [cite_start]"definition": "A way of dealing with a situation; to come near or nearer[cite: 72800, 72896, 72934]."
+        },
+        {
+          "word": "ponder",
+          [cite_start]"definition": "To think about something carefully before making a decision[cite: 72801]."
+        },
+        {
+          "word": "enthusiasts",
+          [cite_start]"definition": "People who are very interested in a particular activity or subject[cite: 72802]."
+        },
+        {
+          "word": "cluttered",
+          [cite_start]"definition": "Messy, disorganized, or filled with too many things[cite: 72807]."
+        },
+        {
+          "word": "consultation",
+          [cite_start]"definition": "A meeting between a patient and a doctor to discuss health concerns[cite: 72810]."
+        },
+        {
+          "word": "occasionally",
+          [cite_start]"definition": "Sometimes but not often; at infrequent or irregular intervals[cite: 72811, 50808]."
+        },
+        {
+          "word": "sync",
+          [cite_start]"definition": "Abbreviation for synchronize; keeping two or more items in agreement or harmony[cite: 72814]."
+        },
+        {
+          "word": "appreciate",
+          [cite_start]"definition": "To recognize how good someone or something is; to understand and enjoy[cite: 72816]."
+        },
+        {
+          "word": "chaos",
+          [cite_start]"definition": "A state of complete disorder and confusion[cite: 72817]."
+        },
+        {
+          "word": "embarrassing",
+          [cite_start]"definition": "Causing embarrassment, self-consciousness, or shame[cite: 72820]."
+        },
+        {
+          "word": "embarrassment",
+          [cite_start]"definition": "A feeling of self-consciousness, shame, or awkwardness[cite: 72820]."
+        },
+        {
+          "word": "disrupting",
+          [cite_start]"definition": "Interfering with or interrupting the normal course or unity of something[cite: 72822]."
+        },
+        {
+          "word": "strive",
+          [cite_start]"definition": "To make great efforts to achieve or obtain something; struggle vigorously[cite: 72823]."
+        },
+        {
+          "word": "tone of voice",
+          [cite_start]"definition": "Elements of language that communicate identity, mood, and personality[cite: 72824]."
+        },
+        {
+          "word": "severe",
+          [cite_start]"definition": "Causing very great pain, difficulty, or harm; intense and serious[cite: 72828, 55517]."
+        },
+        {
+          "word": "can't agree more",
+          [cite_start]"definition": "Expression used to say you completely agree with what has been said[cite: 72838]."
+        },
+        {
+          "word": "indulgence",
+          [cite_start]"definition": "The attitude of allowing yourself or someone else to have something enjoyable[cite: 72841]."
+        },
+        {
+          "word": "crumbling",
+          [cite_start]"definition": "Breaking into small fragments; physically or abstractly falling apart[cite: 72843]."
+        },
+        {
+          "word": "pretend",
+          [cite_start]"definition": "To act as if something is true when it is not, often for deception or play[cite: 72844]."
+        },
+        {
+          "word": "rushing",
+          [cite_start]"definition": "Moving or cause to happen very quickly with haste or urgency[cite: 72845]."
+        },
+        {
+          "word": "distant",
+          [cite_start]"definition": "Far away in space, time, or relationship; emotionally withdrawn[cite: 72846]."
+        },
+        {
+          "word": "obsession",
+          [cite_start]"definition": "Something or someone that you think about all the time[cite: 72847]."
+        },
+        {
+          "word": "undeniably",
+          [cite_start]"definition": "In a way that is certainly true and cannot be disputed[cite: 72849]."
+        },
+        {
+          "word": "narrowed",
+          [cite_start]"definition": "Made or becoming less wide; restricted or limited[cite: 72850]."
+        },
+        {
+          "word": "spitting",
+          [cite_start]"definition": "The act of ejecting saliva or contents from the mouth[cite: 72856]."
+        },
+        {
+          "word": "envisioned",
+          [cite_start]"definition": "To imagine or expect something possible; picturing something in the mind[cite: 72860]."
+        },
+        {
+          "word": "encountered",
+          [cite_start]"definition": "Unexpectedly being faced with or experiencing something difficult[cite: 72862]."
+        },
+        {
+          "word": "absorbing",
+          [cite_start]"definition": "Something very interesting that holds one's attention[cite: 72863]."
+        },
+        {
+          "word": "exerted",
+          [cite_start]"definition": "The past form of exert; to use authority, power, or influence[cite: 72863]."
+        },
+        {
+          "word": "ground",
+          [cite_start]"definition": "Crushed into very small pieces or powder (past form of grind)[cite: 72865, 4826]."
+        },
+        {
+          "word": "grind",
+          [cite_start]"definition": "The action of crushing something into fine powder[cite: 72866, 4812]."
+        },
+        {
+          "word": "taunt",
+          [cite_start]"definition": "A remark made in order to anger, wound, or provoke someone[cite: 72868]."
+        },
+        {
+          "word": "provoke",
+          [cite_start]"definition": "To cause a reaction, especially a negative one; to call forth a feeling[cite: 72868]."
+        },
+        {
+          "word": "incident",
+          [cite_start]"definition": "An instance of something happening; an event or occurrence[cite: 72872]."
+        },
+        {
+          "word": "extraordinary",
+          [cite_start]"definition": "Very unusual, special, unexpected, or strange[cite: 72873]."
+        },
+        {
+          "word": "hinder",
+          [cite_start]"definition": "To make it difficult for someone to do something or for something to happen[cite: 72874]."
+        },
+        {
+          "word": "hesitate",
+          [cite_start]"definition": "To pause before you do or say something because you are uncertain[cite: 72875]."
+        },
+        {
+          "word": "relevance",
+          [cite_start]"definition": "The degree to which something is related or useful to what is being discussed[cite: 72876]."
+        },
+        {
+          "word": "squinting",
+          [cite_start]"definition": "Eye condition (strabismus) or the act of looking with eyes partly closed[cite: 72878]."
+        },
+        {
+          "word": "inevitable",
+          [cite_start]"definition": "Certain to happen and unable to be avoided or prevented[cite: 72879, 72938]."
+        },
+        {
+          "word": "embarrassed",
+          [cite_start]"definition": "Feeling ashamed or shy[cite: 72880]."
+        },
+        {
+          "word": "momentarily",
+          [cite_start]"definition": "For a very short time; at any moment[cite: 72881]."
+        },
+        {
+          "word": "elaborate",
+          [cite_start]"definition": "To add more information or explain; involving many carefully arranged parts[cite: 72882, 5988]."
+        },
+        {
+          "word": "hilarious",
+          [cite_start]"definition": "Extremely funny and causing a lot of laughter[cite: 72885]."
+        },
+        {
+          "word": "potentially",
+          [cite_start]"definition": "Possibly; with the possibility of becoming true or leading to an outcome[cite: 72891]."
+        },
+        {
+          "word": "conclusion",
+          [cite_start]"definition": "The final part or ending of something; a final statement or opinion reached[cite: 72892]."
+        },
+        {
+          "word": "conscious",
+          [cite_start]"definition": "Awake, aware, and able to think; doing something with full awareness[cite: 72895]."
+        },
+        {
+          "word": "versatile",
+          [cite_start]"definition": "Able to change easily or be used for many different activities[cite: 72897]."
+        },
+        {
+          "word": "roam",
+          [cite_start]"definition": "To move about or travel without a clear idea of what you are going to do[cite: 72898]."
+        },
+        {
+          "word": "pestered",
+          [cite_start]"definition": "To trouble or annoy someone with frequent requests or interruptions[cite: 72899]."
+        },
+        {
+          "word": "interrupt",
+          [cite_start]"definition": "To stop the continuous progress of an activity or process; break in on[cite: 72900, 33413]."
+        },
+        {
+          "word": "humorous",
+          [cite_start]"definition": "Funny, or making you laugh[cite: 72902]."
+        },
+        {
+          "word": "irrelevant",
+          [cite_start]"definition": "Not connected to or related to the matter or topic being discussed[cite: 72906]."
+        },
+        {
+          "word": "carry something out",
+          [cite_start]"definition": "To do or complete something, especially research or a promised task[cite: 72909]."
+        },
+        {
+          "word": "began",
+          [cite_start]"definition": "Simple past tense of begin; action that started and ended in the past[cite: 72911]."
+        },
+        {
+          "word": "begun",
+          [cite_start]"definition": "Past participle of begin; used in perfect tenses to indicate completion[cite: 72911]."
+        },
+        {
+          "word": "overwhelm",
+          [cite_start]"definition": "To be overcome by a force or feeling, making it difficult to cope[cite: 72912]."
+        },
+        {
+          "word": "substantial",
+          [cite_start]"definition": "Of considerable importance, size, or worth[cite: 72915]."
+        },
+        {
+          "word": "sincerely",
+          [cite_start]"definition": "In a sincere or genuine way[cite: 72915]."
+        },
+        {
+          "word": "barely",
+          [cite_start]"definition": "Only just; almost not; in a simple and sparse way[cite: 72916]."
+        },
+        {
+          "word": "apparently",
+          [cite_start]"definition": "As far as one knows or can see; seemingly[cite: 72917]."
+        },
+        {
+          "word": "favour",
+          [cite_start]"definition": "Approval, support, or liking; an act of kindness beyond what is due[cite: 72936]."
+        },
+        {
+          "word": "provided",
+          [cite_start]"definition": "On the condition or understanding that[cite: 72940]."
+        },
+        {
+          "word": "abruptly",
+          [cite_start]"definition": "Suddenly and unexpectedly; in a rude or curt manner[cite: 72944]."
+        },
+        {
+          "word": "colleague",
+          [cite_start]"definition": "A person with whom one works in a profession or business[cite: 72946]."
+        },
+        {
+          "word": "compatible",
+          [cite_start]"definition": "Able to exist or occur together without problems or conflict[cite: 72946]."
+        },
+        {
+          "word": "inferior",
+          [cite_start]"definition": "Something of lower quality, rank, or importance compared to something else[cite: 31687]."
+        },
+        {
+          "word": "condolence",
+          [cite_start]"definition": "Expressions of sympathy and sorrow for someone's loss[cite: 31721]."
+        },
+        {
+          "word": "perspective",
+          [cite_start]"definition": "To think about a situation in a wise way; a mental view or prospect[cite: 33444, 33457]."
+        },
+        {
+          "word": "plenty",
+          [cite_start]"definition": "A large or sufficient amount or quantity; more than enough[cite: 35028]."
+        },
+        {
+          "word": "overcome",
+          [cite_start]"definition": "Succeed in dealing with a problem or difficulty; defeat an opponent[cite: 35111]."
+        },
+        {
+          "word": "emphasize",
+          [cite_start]"definition": "To give special importance or attention to something, highlighting it[cite: 36737]."
+        },
+        {
+          "word": "generous",
+          [cite_start]"definition": "Willing to give money, help, or kindness more than is usual[cite: 40287]."
+        },
+        {
+          "word": "arrogant",
+          [cite_start]"definition": "Proud in an unpleasant way and behaving as if you are better than others[cite: 45959]."
+        },
+        {
+          "word": "attention",
+          [cite_start]"definition": "The act of taking notice of someone or something[cite: 47170]."
+        },
+        {
+          "word": "depth",
+          [cite_start]"definition": "Distance from the top; intensity or seriousness of a feeling or state[cite: 49569]."
+        },
+        {
+          "word": "fluently",
+          [cite_start]"definition": "Ability to express oneself easily and articulately[cite: 50731]."
+        },
+        {
+          "word": "often",
+          [cite_start]"definition": "Frequently; many times; in many instances[cite: 50771]."
+        },
+        {
+          "word": "rapport",
+          [cite_start]"definition": "A close, friendly, and harmonious relationship characterized by mutual understanding[cite: 55588]."
+        },
+        {
+          "word": "despair",
+          [cite_start]"definition": "A feeling of hopelessness or the inability to improve a situation[cite: 57062]."
+        },
+        {
+          "word": "rash",
+          [cite_start]"definition": "Acting or done without careful consideration of possible consequences[cite: 57122]."
+        },
+        {
+          "word": "fabulous",
+          [cite_start]"definition": "Very good; excellent; astonishing; resembling or suggesting a fable[cite: 61826, 61844]."
+        },
+        {
+          "word": "acknowledge",
+          [cite_start]"definition": "Accept or admit the existence or truth of; grant[cite: 61887]."
+        },
+        {
+          "word": "discouraged",
+          [cite_start]"definition": "Having lost confidence or enthusiasm for something[cite: 64237]."
+        },
+        {
+          "word": "extensive",
+          [cite_start]"definition": "Large in area or amount[cite: 68519]."
+        },
+        {
+          "word": "suspense",
+          [cite_start]"definition": "A feeling of excited or anxious uncertainty about what may happen[cite: 71500]."
+        }
+      ],
+      "Other": [
+        {
+          "word": "reticence",
+          [cite_start]"definition": "Being quiet and not sharing thoughts easily[cite: 1, 3]."
+        },
+        {
+          "word": "implementation",
+          [cite_start]"definition": "The execution or practice of a plan, design, or model[cite: 72681]."
+        },
+        {
+          "word": "analogy",
+          [cite_start]"definition": "A comparison between one thing and another typically for explanation or clarification[cite: 72687, 72944]."
+        },
+        {
+          "word": "levitate",
+          [cite_start]"definition": "To rise or cause to rise and hover in the air, typically by magical powers[cite: 72689]."
+        },
+        {
+          "word": "credibility",
+          [cite_start]"definition": "The quality of being believed or trusted[cite: 72791]."
+        },
+        {
+          "word": "time-lapse",
+          [cite_start]"definition": "Photographic technique recording sequence of frames at set intervals to show changes[cite: 72693]."
+        },
+        {
+          "word": "daunting",
+          [cite_start]"definition": "Seeming difficult to deal with in prospect; intimidating[cite: 72701]."
+        },
+        {
+          "word": "delusional",
+          [cite_start]"definition": "Believing things that couldn't possibly be true[cite: 72704]."
+        },
+        {
+          "word": "revolutionary",
+          [cite_start]"definition": "A person who participates in or advocates for a major impact on society[cite: 72708]."
+        },
+        {
+          "word": "horde",
+          [cite_start]"definition": "A large group or multitude of people or things; vast crowd or nomadic group[cite: 72710]."
+        },
+        {
+          "word": "modulation",
+          [cite_start]"definition": "Process of changing the pitch of voice, key of a song, or electrical signal[cite: 72720]."
+        },
+        {
+          "word": "auditory cues",
+          [cite_start]"definition": "Sound signals processed by the brain to make perceptual inferences[cite: 72734]."
+        },
+        {
+          "word": "nom",
+          [cite_start]"definition": "Informal slang term for a nomination for an honor or award[cite: 72784]."
+        },
+        {
+          "word": "idealistic",
+          [cite_start]"definition": "Someone who believes in achieving high ideals, even if they seem unlikely[cite: 72789]."
+        },
+        {
+          "word": "protagonists",
+          [cite_start]"definition": "The main characters in a story whose journey drives the plot forward[cite: 72790]."
+        },
+        {
+          "word": "twisted",
+          [cite_start]"definition": "Something physically bent or metaphorically morally reprehensible/unusual[cite: 72791]."
+        },
+        {
+          "word": "smeared",
+          [cite_start]"definition": "Something soiled or defiled; to publicly accuse to harm reputation[cite: 72796]."
+        },
+        {
+          "word": "smearing",
+          [cite_start]"definition": "Act of applying an oily substance over a surface; defaming someone[cite: 72797]."
+        },
+        {
+          "word": "intuitive",
+          [cite_start]"definition": "Possessing or given to intuition; known or perceived by directly apprehended insight[cite: 72805]."
+        },
+        {
+          "word": "intuition",
+          [cite_start]"definition": "The ability to understand something instinctively without conscious reasoning[cite: 72806, 72840]."
+        },
+        {
+          "word": "narcissism",
+          [cite_start]"definition": "Personality trait with excessive self-importance and lack of empathy[cite: 72813]."
+        },
+        {
+          "word": "charisma",
+          [cite_start]"definition": "Special personal quality that enables an individual to influence and inspire others[cite: 72815]."
+        },
+        {
+          "word": "insightful",
+          [cite_start]"definition": "Clear, deep, and original understanding of a situation or problem[cite: 72818, 72917]."
+        },
+        {
+          "word": "venerable",
+          [cite_start]"definition": "Deserving great respect because they are old, wise, or honorable[cite: 72867]."
+        },
+        {
+          "word": "mnemonics",
+          [cite_start]"definition": "The study and development of systems for improving and assisting memory[cite: 72870]."
+        },
+        {
+          "word": "satire",
+          [cite_start]"definition": "Humorous way of criticizing people or ideas, often to make a political point[cite: 72901]."
+        },
+        {
+          "word": "interpretation",
+          [cite_start]"definition": "The action of explaining the meaning of something; a stylistic rendition[cite: 72918]."
+        },
+        {
+          "word": "interpret",
+          [cite_start]"definition": "To explain the meaning of information; translate orally into sign language[cite: 72919]."
+        },
+        {
+          "word": "counterarguments",
+          [cite_start]"definition": "An argument offered in opposition to another to affirm logic[cite: 72921]."
+        },
+        {
+          "word": "annihilate",
+          [cite_start]"definition": "To destroy something completely so that nothing is left[cite: 72927]."
+        },
+        {
+          "word": "contradiction",
+          [cite_start]"definition": "Situation or statement containing opposing ideas, making it logically inconsistent[cite: 72931]."
+        },
+        {
+          "word": "radar",
+          [cite_start]"definition": "System for detecting speed/direction; person's capacity for intuitive perception[cite: 72933]."
+        },
+        {
+          "word": "broader issues",
+          [cite_start]"definition": "Overarching themes or complex situations with multiple interconnected aspects[cite: 72941]."
+        },
+        {
+          "word": "warrior",
+          [cite_start]"definition": "A person skilled in combat; very brave and fights hard[cite: 34973]."
+        },
+        {
+          "word": "invincible",
+          [cite_start]"definition": "Incapable of being defeated, overcome, or subdued[cite: 34987, 35003]."
+        },
+        {
+          "word": "orate",
+          [cite_start]"definition": "To make a speech, especially pompously or at length[cite: 66025]."
+        },
+        {
+          "word": "orchestra",
+          [cite_start]"definition": "A large instrumental ensemble consisting of strings, woodwinds, brass, and percussion[cite: 48354]."
+        },
+        {
+          "word": "ambitious",
+          [cite_start]"definition": "Desiring achievement or power; requiring a lot of effort to achieve[cite: 49622]."
+        },
+        {
+          "word": "rigorous",
+          [cite_start]"definition": "Done very carefully and with great attention to detail[cite: 68390]."
+        },
+        {
+          "word": "disillusionment",
+          [cite_start]"definition": "A feeling of being disappointed because something liked is not as good as thought[cite: 64191]."
+        }
+      ]
+    },
+    "economics": {
+      "Important": [
+        {
+          "word": "firm",
+          [cite_start]"definition": "In government context, persons collectively conducting business under a name[cite: 72697]."
+        },
+        {
+          "word": "reimbursement",
+          [cite_start]"definition": "The act of paying back someone for expenses they have incurred on behalf of an entity[cite: 72711]."
+        },
+        {
+          "word": "diversifying",
+          [cite_start]"definition": "Introduce variety or increase the range of products/investments to reduce risk[cite: 72760]."
+        },
+        {
+          "word": "lucrative",
+          [cite_start]"definition": "Adjective describing a business or activity that is profitable or moneymaking[cite: 72783, 72926]."
+        },
+        {
+          "word": "adequate",
+          [cite_start]"definition": "Good enough or of a quality that is acceptable for a requirement[cite: 72851]."
+        },
+        {
+          "word": "leverage",
+          [cite_start]"definition": "Using borrowed money or existing resources to increase potential returns[cite: 72852, 72886]."
+        },
+        {
+          "word": "mills",
+          [cite_start]"definition": "Places (big factories or local chakki) where grains are ground into flour[cite: 72864]."
+        },
+        {
+          "word": "drastically",
+          [cite_start]"definition": "In a way that is likely to have a far-reaching effect; severe and sudden[cite: 72924]."
+        },
+        {
+          "word": "reliant",
+          [cite_start]"definition": "Dependent on someone or something to survive or work correctly[cite: 72928, 72943]."
+        },
+        {
+          "word": "association",
+          [cite_start]"definition": "A group of people or organizations who work together for a particular purpose[cite: 72882]."
+        },
+        {
+          "word": "thriving",
+          [cite_start]"definition": "An industry or business that is growing or developing well[cite: 68494]."
+        }
+      ],
+      "Other": [
+        {
+          "word": "venture",
+          [cite_start]"definition": "A risky or daring journey or undertaking, often pioneering[cite: 72696]."
+        },
+        {
+          "word": "precision",
+          [cite_start]"definition": "Degree of refinement with which an operation is performed; closeness of measurements[cite: 72819]."
+        },
+        {
+          "word": "negligible",
+          [cite_start]"definition": "So small or unimportant as to be not worth considering; insignificant[cite: 72754]."
+        },
+        {
+          "word": "levying",
+          [cite_start]"definition": "The act of imposing and collecting a tax, fine, or other fee[cite: 72812]."
+        },
+        {
+          "word": "analyst",
+          [cite_start]"definition": "Person using analytical methods to evaluate problems and provide actionable info[cite: 72775]."
+        },
+        {
+          "word": "qualitative",
+          [cite_start]"definition": "Data expressing concepts and perceptions through non-numerical means[cite: 72829]."
+        },
+        {
+          "word": "parallel processing",
+          [cite_start]"definition": "Computing technique using multiple processors concurrently to increase performance[cite: 72829]."
+        },
+        {
+          "word": "core (CPU)",
+          [cite_start]"definition": "Fundamental processing unit within a CPU responsible for executing instructions[cite: 72830]."
+        },
+        {
+          "word": "optimize",
+          [cite_start]"definition": "To make the best or most effective use of a situation or resource[cite: 72831]."
+        },
+        {
+          "word": "convoys",
+          [cite_start]"definition": "A group of vehicles or ships traveling together for mutual support[cite: 72832]."
+        },
+        {
+          "word": "concentration",
+          [cite_start]"definition": "The amount of a substance present in a certain volume or space[cite: 72903]."
+        },
+        {
+          "word": "execution",
+          [cite_start]"definition": "The active stage of performing tasks in project management to achieve outcomes[cite: 72907]."
+        },
+        {
+          "word": "implementation",
+          [cite_start]"definition": "The preparatory stage of planning and setting up components for action[cite: 72908]."
+        },
+        {
+          "word": "shortlisting",
+          [cite_start]"definition": "The process of selecting candidates to be moved forward in recruitment[cite: 40256]."
+        },
+        {
+          "word": "elevate",
+          [cite_start]"definition": "To raise in rank or status (e.g., elevated to chairman)[cite: 44781]."
+        },
+        {
+          "word": "rival",
+          [cite_start]"definition": "A person or group that tries to be more successful or defeat another[cite: 60687]."
+        }
+      ]
+    },
+    "law": {
+      "Important": [
+        {
+          "word": "detained",
+          [cite_start]"definition": "To force someone officially to stay in a place, typically for questioning[cite: 72691, 72854]."
+        },
+        {
+          "word": "enforcement",
+          [cite_start]"definition": "The act of making sure laws, rules, or regulations are obeyed[cite: 72727]."
+        },
+        {
+          "word": "evicted",
+          [cite_start]"definition": "To forcibly remove someone from a property by legal means[cite: 72740]."
+        },
+        {
+          "word": "abolish",
+          [cite_start]"definition": "To officially end or eliminate an activity or custom (e.g., bullfighting)[cite: 72754]."
+        },
+        {
+          "word": "thief",
+          [cite_start]"definition": "A person who steals another's property without using force or threat[cite: 72783]."
+        },
+        {
+          "word": "theft",
+          [cite_start]"definition": "The action or crime of stealing[cite: 72784]."
+        },
+        {
+          "word": "consent",
+          [cite_start]"definition": "Permission for something to happen or agreement to do something[cite: 72786]."
+        },
+        {
+          "word": "negligence",
+          [cite_start]"definition": "Translation of 'laparwahi'; failure to take proper care over something[cite: 72843]."
+        },
+        {
+          "word": "littering",
+          [cite_start]"definition": "The act of discarding waste improperly in public or private spaces[cite: 72857]."
+        },
+        {
+          "word": "dignity",
+          [cite_start]"definition": "The inherent worth of a person encompassing right to ethical treatment[cite: 72871]."
+        },
+        {
+          "word": "oppose",
+          [cite_start]"definition": "To disagree with and attempt to prevent by argument or resistance[cite: 72873]."
+        },
+        {
+          "word": "threat",
+          [cite_start]"definition": "Possibility of something unwanted happening; person likely to cause harm[cite: 72883]."
+        },
+        {
+          "word": "prohibited",
+          [cite_start]"definition": "That which has been forbidden or banned by authority[cite: 72913, 33390]."
+        },
+        {
+          "word": "confess",
+          [cite_start]"definition": "To admit that one has committed a crime or done something wrong[cite: 72949]."
+        },
+        {
+          "word": "resolved",
+          [cite_start]"definition": "Determined; to solve or end a problem or difficulty[cite: 72950]."
+        },
+        {
+          "word": "disclosure",
+          [cite_start]"definition": "A fact, especially a secret, that is made known (e.g., government programmes)[cite: 31601]."
+        },
+        {
+          "word": "recruited",
+          [cite_start]"definition": "To persuade someone to join a group or organization (e.g., army)[cite: 60655]."
+        }
+      ],
+      "Other": [
+        {
+          "word": "incite",
+          [cite_start]"definition": "To encourage someone to do something unpleasant or violent[cite: 72689, 72781]."
+        },
+        {
+          "word": "refuted",
+          [cite_start]"definition": "To prove a statement or belief to be wrong or false by argument[cite: 72692]."
+        },
+        {
+          "word": "decriminalize",
+          [cite_start]"definition": "To remove or reduce criminal penalties for an action[cite: 72703]."
+        },
+        {
+          "word": "jaywalking",
+          [cite_start]"definition": "Crossing a street unlawfully or without regard for approaching traffic[cite: 72725]."
+        },
+        {
+          "word": "cover-up",
+          [cite_start]"definition": "An attempt to conceal evidence of wrongdoing, error, or incompetence[cite: 72738]."
+        },
+        {
+          "word": "retroactively",
+          [cite_start]"definition": "In a way that has effect from a date before it was approved[cite: 72746]."
+        },
+        {
+          "word": "empanelled",
+          [cite_start]"definition": "To select and list names for a jury; enroll a list of jurors[cite: 72751, 72779, 72933]."
+        },
+        {
+          "word": "lieutenant",
+          [cite_start]"definition": "A deputy or substitute acting for a superior; a rank of officer[cite: 72752]."
+        },
+        {
+          "word": "fictitious",
+          [cite_start]"definition": "Not genuine; made up or imaginary for deception or play[cite: 72762]."
+        },
+        {
+          "word": "autonomy",
+          [cite_start]"definition": "The ability to make one's own decisions and act independently[cite: 72768]."
+        },
+        {
+          "word": "retaliation",
+          [cite_start]"definition": "The action of returning a military attack; revenge[cite: 72771]."
+        },
+        {
+          "word": "retaliate",
+          [cite_start]"definition": "Make an attack in return for a similar attack[cite: 72772]."
+        },
+        {
+          "word": "renounce",
+          [cite_start]"definition": "Formally declare one's abandonment of a claim, right, or possession[cite: 72775]."
+        },
+        {
+          "word": "inciting",
+          [cite_start]"definition": "Encouraging someone to feel or do something unpleasant or violent[cite: 72781]."
+        },
+        {
+          "word": "dissenting",
+          [cite_start]"definition": "Showing a strongly different opinion on an official suggestion or plan[cite: 72787]."
+        },
+        {
+          "word": "suppression",
+          [cite_start]"definition": "Preventing something from happening, being seen, or operating[cite: 72787]."
+        },
+        {
+          "word": "rebellion",
+          [cite_start]"definition": "Organized attempt to change government through violence or protest[cite: 72788, 36677]."
+        },
+        {
+          "word": "delimitation",
+          [cite_start]"definition": "Act of fixing limits or boundaries of territorial constituencies[cite: 72858]."
+        },
+        {
+          "word": "prescribe",
+          [cite_start]"definition": "To authorize medicine; state authoritatively as a rule[cite: 72913]."
+        },
+        {
+          "word": "incompetence",
+          [cite_start]"definition": "The inability to do something successfully[cite: 72914]."
+        },
+        {
+          "word": "allegedly",
+          [cite_start]"definition": "Claimed to be the case or have taken place without proof[cite: 72924, 72935]."
+        },
+        {
+          "word": "redacted",
+          [cite_start]"definition": "Removing or concealing confidential or sensitive information from text[cite: 72939]."
+        },
+        {
+          "word": "discretion",
+          [cite_start]"definition": "Individual choice; power of free decision within legal bounds[cite: 34922]."
+        },
+        {
+          "word": "allegiance",
+          [cite_start]"definition": "Loyalty or devotion to a person, group, cause, or country[cite: 41814]."
+        },
+        {
+          "word": "undercover",
+          [cite_start]"definition": "Involving secret work within community for police investigation[cite: 53170]."
+        },
+        {
+          "word": "atrocities",
+          [cite_start]"definition": "Extremely wicked or cruel acts involving physical violence[cite: 68333, 72831]."
+        },
+        {
+          "word": "entity",
+          [cite_start]"definition": "A thing with a distinct and independent existence (e.g., empire)[cite: 63000]."
+        }
+      ]
+    },
+    "nature": {
+      "Important": [
+        {
+          "word": "starve",
+          [cite_start]"definition": "Suffer or die from hunger; to be freezing cold[cite: 72776]."
+        },
+        {
+          "word": "stems",
+          [cite_start]"definition": "The central part of a plant supporting it upright to help growth[cite: 72825]."
+        },
+        {
+          "word": "collapse",
+          [cite_start]"definition": "Sudden fall or shrink together; disintegrating or losing structure[cite: 72836]."
+        },
+        {
+          "word": "exhausted",
+          [cite_start]"definition": "Completely used up (reserves); very tired[cite: 72905]."
+        },
+        {
+          "word": "chase",
+          [cite_start]"definition": "To pursue in order to catch or catch up with[cite: 35057]."
+        },
+        {
+          "word": "fear",
+          [cite_start]"definition": "Unpleasant feeling triggered by the perception of danger[cite: 35079]."
+        },
+        {
+          "word": "beehive",
+          [cite_start]"definition": "Structure where honey bees live and raise their young[cite: 44823]."
+        },
+        {
+          "word": "stare",
+          [cite_start]"definition": "To look at something or someone fixedly for a long time[cite: 44854]."
+        },
+        {
+          "word": "crawl",
+          [cite_start]"definition": "Move slowly with body close to ground or on hands and knees[cite: 65966]."
+        },
+        {
+          "word": "erupt",
+          [cite_start]"definition": "A volcano becoming active and ejecting lava, ash, and gases[cite: 67157]."
+        }
+      ],
+      "Other": [
+        {
+          "word": "coral",
+          [cite_start]"definition": "Marine animals (polyps) and the hard structures (reefs) they build[cite: 72690]."
+        },
+        {
+          "word": "Madagascar Periwinkle",
+          [cite_start]"definition": "A perennial species of flowering plant in the family Apocynaceae[cite: 72695]."
+        },
+        {
+          "word": "totems",
+          [cite_start]"definition": "Symbol (animal/plant) representing a family, clan, or tribe[cite: 72709]."
+        },
+        {
+          "word": "stalks",
+          [cite_start]"definition": "The main stem of a plant; the petiole of a leaf or peduncle of flower[cite: 72777]."
+        },
+        {
+          "word": "fierce",
+          [cite_start]"definition": "Physically violent, intense, or strong[cite: 72767]."
+        },
+        {
+          "word": "mulch",
+          [cite_start]"definition": "Layer applied to soil surface to improve fertility and moisture[cite: 72808]."
+        },
+        {
+          "word": "vertical farming",
+          [cite_start]"definition": "Technique of growing crops in solution without soil in layers[cite: 72809]."
+        },
+        {
+          "word": "canopy",
+          [cite_start]"definition": "Covering or structure protecting from weather; leaf layer[cite: 72826]."
+        },
+        {
+          "word": "penetration",
+          [cite_start]"definition": "Act of entering into or through; discern deeply[cite: 72827]."
+        },
+        {
+          "word": "terrain",
+          [cite_start]"definition": "An area of land considering its natural features[cite: 72837]."
+        },
+        {
+          "word": "prevalence",
+          [cite_start]"definition": "The fact of something being very common (e.g., disease in families)[cite: 72855]."
+        },
+        {
+          "word": "anatomy",
+          [cite_start]"definition": "Scientific study of the structural organization of living things[cite: 72859]."
+        },
+        {
+          "word": "vernal",
+          [cite_start]"definition": "Relating to the spring season[cite: 72867]."
+        },
+        {
+          "word": "alleviate",
+          [cite_start]"definition": "To make something (e.g., pain) less severe or painful[cite: 72869]."
+        },
+        {
+          "word": "systemic",
+          [cite_start]"definition": "Affecting the entire body or a whole system rather than a part[cite: 72884]."
+        },
+        {
+          "word": "sustenance",
+          [cite_start]"definition": "Means of maintaining life; nourishment and provisions[cite: 72887]."
+        },
+        {
+          "word": "suffocates",
+          [cite_start]"definition": "To cause death by not having enough oxygen[cite: 72821]."
+        },
+        {
+          "word": "hatching",
+          [cite_start]"definition": "Biological process of releasing young from an egg[cite: 72822]."
+        },
+        {
+          "word": "nourish",
+          [cite_start]"definition": "Provide food or substances necessary for growth and health[cite: 40315]."
+        },
+        {
+          "word": "overstimulation",
+          [cite_start]"definition": "Sensory overload occurring when senses are overwhelmed by input[cite: 40393]."
+        },
+        {
+          "word": "periodically",
+          [cite_start]"definition": "At regular intervals or from time to time[cite: 43062]."
+        },
+        {
+          "word": "explosion",
+          [cite_start]"definition": "Rapid expansion in volume; an instance of exploding[cite: 43108]."
+        },
+        {
+          "word": "instinct",
+          [cite_start]"definition": "Natural impulse or way of behaving; intuition[cite: 51951]."
+        },
+        {
+          "word": "choke",
+          [cite_start]"definition": "Obstructing the trachea by compressing or poisoning air[cite: 54291]."
+        },
+        {
+          "word": "pale",
+          [cite_start]"definition": "Light in color or shade; containing little pigment[cite: 72920]."
+        },
+        {
+          "word": "cognition",
+          [cite_start]"definition": "Mental process of acquiring knowledge through thought and senses[cite: 72923]."
+        },
+        {
+          "word": "atrocious",
+          [cite_start]"definition": "Extremely bad; unpleasant weather; cruel and shocking[cite: 68364]."
+        },
+        {
+          "word": "inhibits",
+          [cite_start]"definition": "To prevent or make something happen more slowly (e.g., drug growth)[cite: 68449]."
+        },
+        {
+          "word": "wanders",
+          [cite_start]"definition": "To walk around slowly without any clear purpose[cite: 34936, 34950]."
+        }
+      ]
+    },
+    "food": {
+      "Important": [
+        {
+          "word": "ripen",
+          [cite_start]"definition": "To become or make ripe; mature[cite: 72842]."
+        },
+        {
+          "word": "ripe",
+          [cite_start]"definition": "Developed to the point of readiness for harvesting and eating[cite: 72842]."
+        },
+        {
+          "word": "spinach",
+          [cite_start]"definition": "Green leafy vegetable with earthy or grassy taste (Palak)[cite: 72921]."
+        },
+        {
+          "word": "burps",
+          [cite_start]"definition": "Excess wind released from the mouth; also called belching[cite: 72937]."
+        }
+      ],
+      "Other": [
+        {
+          "word": "kohlrabi",
+          [cite_start]"definition": "Vegetable known as German turnip with mild, sweet flavor[cite: 72703]."
+        },
+        {
+          "word": "gift hamper",
+          [cite_start]"definition": "Collection of food items like chocolates or dry fruits for gifting[cite: 72940]."
+        }
+      ]
+    },
+    "design / house / things": {
+      "Important": [
+        {
+          "word": "gradient",
+          [cite_start]"definition": "A smooth transition between two or more colors common in design[cite: 42, 57]."
+        },
+        {
+          "word": "skyscrapers",
+          [cite_start]"definition": "Very tall habitable buildings often found in cities[cite: 72732]."
+        },
+        {
+          "word": "false ceiling",
+          [cite_start]"definition": "Secondary ceiling installed below the main structural ceiling[cite: 72762]."
+        },
+        {
+          "word": "reception",
+          [cite_start]"definition": "A place in a business or hotel where visitors are greeted[cite: 72839]."
+        },
+        {
+          "word": "lane",
+          [cite_start]"definition": "A narrow road or division of a road marked with painted lines[cite: 72942]."
+        }
+      ],
+      "Other": [
+        {
+          "word": "multicolor gradient",
+          [cite_start]"definition": "When a color gradient includes more than two colors[cite: 65]."
+        },
+        {
+          "word": "ombre",
+          [cite_start]"definition": "A gradual blending of one color hue to another[cite: 70]."
+        },
+        {
+          "word": "ampoule",
+          [cite_start]"definition": "Small, sealed glass vial used to preserve solid or liquid samples[cite: 72712, 72932]."
+        },
+        {
+          "word": "hoardings",
+          [cite_start]"definition": "Large outdoor advertising displays known as billboards[cite: 72740]."
+        },
+        {
+          "word": "reception room",
+          [cite_start]"definition": "Room in a house where people sit together (living/dining)[cite: 72750]."
+        },
+        {
+          "word": "moulding",
+          [cite_start]"definition": "Shaped strip of wood fitted as a decorative architectural feature[cite: 72778]."
+        },
+        {
+          "word": "motif",
+          [cite_start]"definition": "Recurring element or dominant theme appearing in art or design[cite: 72763]."
+        },
+        {
+          "word": "ornamental",
+          [cite_start]"definition": "Architectural elements that are beautiful rather than functional[cite: 72764]."
+        },
+        {
+          "word": "melamine",
+          [cite_start]"definition": "Chemical used to create thermosetting plastic resins[cite: 72799]."
+        },
+        {
+          "word": "mural",
+          [cite_start]"definition": "Large artwork applied to a wall or ceiling[cite: 72803]."
+        },
+        {
+          "word": "pier caps",
+          [cite_start]"definition": "Natural stone caps used to top pillars or piers[cite: 72836]."
+        },
+        {
+          "word": "siren light",
+          [cite_start]"definition": "Revolving warning light with sound alarm for industrial use[cite: 72833]."
+        },
+        {
+          "word": "siren",
+          [cite_start]"definition": "Loud noise-making warning device on emergency vehicles[cite: 72834]."
+        },
+        {
+          "word": "sculpture",
+          [cite_start]"definition": "Art of making 3D representative forms by carving or casting[cite: 72832]."
+        },
+        {
+          "word": "triumphal arch",
+          [cite_start]"definition": "Monumental archway erected to honor a person or event[cite: 72939]."
+        },
+        {
+          "word": "service lane",
+          [cite_start]"definition": "Road providing access to buildings, known as frontage roads[cite: 72937]."
+        },
+        {
+          "word": "contraption",
+          [cite_start]"definition": "Machine or device that appears strange or unnecessarily complicated[cite: 31625]."
+        },
+        {
+          "word": "rigid",
+          [cite_start]"definition": "Objects unable to bend or be forced out of shape[cite: 21503, 72910]."
+        }
+      ]
+    }
   },
-  {
-    "word": "wandering",
-    "definitions": [
-      {
-        "meaning": "Moving without a definite course; often lost, unfocused, or aimless.",
-        "tags": ["verb", "adjective"]
-      }
-    ],
-    "favorite": false
-  },
-  {
-    "word": "roaming",
-    "definitions": [
-      {
-        "meaning": "Moving freely over a wide area, often with exploration or a general purpose.",
-        "tags": ["verb"]
-      }
-    ],
-    "favorite": false
-  },
-  {
-    "word": "brutal",
-    "definitions": [
-      {
-        "meaning": "Extremely cruel, harsh, or violent.",
-        "tags": ["adjective"]
-      },
-      {
-        "meaning": "Very harsh, difficult, or unpleasant.",
-        "tags": ["adjective"]
-      },
-      {
-        "meaning": "Unfeeling or lacking compassion.",
-        "tags": ["adjective"]
-      }
-    ],
-    "favorite": false
-  },
-  {
-    "word": "pledged",
-    "definitions": [
-      {
-        "meaning": "To have made a formal and serious promise.",
-        "tags": ["verb"]
-      },
-      {
-        "meaning": "To offer something valuable as security for a loan or commitment.",
-        "tags": ["finance", "verb"]
-      }
-    ],
-    "favorite": false
-  },
-  {
-    "word": "starving",
-    "definitions": [
-      {
-        "meaning": "Suffering from starvation; severely affected by lack of food.",
-        "tags": ["adjective"]
-      },
-      {
-        "meaning": "Very hungry (used hyperbolically).",
-        "tags": ["informal"]
-      }
-    ],
-    "favorite": false
-  },
-  {
-    "word": "appealing",
-    "definitions": [
-      {
-        "meaning": "Attractive or interesting.",
-        "tags": ["adjective"]
-      },
-      {
-        "meaning": "Showing or expressing a desire for help or sympathy.",
-        "tags": ["adjective", "emotional"]
-      }
-    ],
-    "favorite": false
-  }
-]
+  "Differences": [
+    {
+      "items": "Inclusive vs Exclusive",
+      "explanation": "Inclusive means including all items/people and covers all services; [cite_start]Exclusive limits access to specific or high-class groups[cite: 72684, 72685]."
+    },
+    {
+      "items": "Roof vs Terrace",
+      "explanation": "Roof shields building from weather; [cite_start]Terrace is for outdoor leisure and socializing[cite: 72688]."
+    },
+    {
+      "items": "Instead vs Rather than",
+      [cite_start]"explanation": "Comparison of usage for introducing alternatives[cite: 72687]."
+    },
+    {
+      "items": "Lime vs Lemon",
+      "explanation": "Lemons are larger/yellow with sweeter floral flavor; [cite_start]Limes are smaller/green with sharp acidic flavor[cite: 72774]."
+    },
+    {
+      "items": "Coach vs Compartment",
+      [cite_start]"explanation": "Explanation of railway car units[cite: 25128]."
+    },
+    {
+      "items": "Condolence vs Tribute",
+      "explanation": "Condolence is sympathy for loss; [cite_start]Tribute is a mark of respect or admiration[cite: 31721, 31736]."
+    },
+    {
+      "items": "Instinct vs Intuition",
+      [cite_start]"explanation": "Comparison of natural impulse versus instinctive understanding[cite: 51942]."
+    },
+    {
+      "items": "Began vs Begun",
+      "explanation": "Began is simple past for completed actions; [cite_start]Begun is used in perfect tenses[cite: 72911]."
+    },
+    {
+      "items": "Implementation vs Execution",
+      "explanation": "Implementation is preparatory setup; [cite_start]Execution is the active performing of tasks[cite: 72907, 72908]."
+    },
+    {
+      "items": "Although vs However",
+      "explanation": "Although connects ideas in one sentence; [cite_start]However usually starts a new sentence[cite: 55619, 55635]."
+    },
+    {
+      "items": "Because vs As vs Since",
+      [cite_start]"explanation": "Differences in expressing reasons in English[cite: 59441]."
+    }
+  ],
+    }
+  ]
+}
