@@ -1,28 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Vocabulary</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<title>Vocabulary</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background:#121212;
+  color:#e6e6e6;
+  display:flex;
+  justify-content:center;
+}
+
+.container {
+  width:100%;
+  max-width:760px;
+  padding:20px;
+}
+
+#tabs {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:14px;
+}
+
+#tabs button {
+  background:#1f1f1f;
+  border:1px solid #333;
+  color:#eee;
+  padding:6px 14px;
+  border-radius:999px;
+  cursor:pointer;
+}
+
+#tabs button.active {
+  background:#2b2b2b;
+}
+
+#search {
+  width:100%;
+  padding:12px;
+  background:#1b1b1b;
+  border:1px solid #2a2a2a;
+  border-radius:8px;
+  color:#eee;
+  margin-bottom:16px;
+}
+
+.section-title {
+  margin:22px 0 10px;
+  font-size:18px;
+  border-bottom:1px solid #333;
+  padding-bottom:6px;
+}
+
+.card {
+  background:#1a1a1a;
+  border:1px solid #2a2a2a;
+  border-radius:10px;
+  padding:14px;
+  margin-bottom:12px;
+}
+
+.card h3 {
+  margin:0 0 6px;
+}
+
+.card p {
+  margin:0;
+  color:#cfcfcf;
+  line-height:1.5;
+}
+</style>
 </head>
 <body>
-  <div class="container">
 
-    <div id="categories"></div>
+<div class="container">
 
-    <input id="search" placeholder="Search in category..." />
+  <div id="tabs"></div>
 
-    <div class="actions">
-      <button id="exportFavs">Export Favorites</button>
-    </div>
+  <input id="search" placeholder="Search in category...">
 
-    <div id="content"></div>
+  <div id="content"></div>
 
-  </div>
+</div>
 
-  <script src="script.js"></script>
+<script>
+let DATA;
+let activeTab = "general";
+
+const tabs = document.getElementById("tabs");
+const content = document.getElementById("content");
+const search = document.getElementById("search");
+
+fetch("data.json")
+  .then(r=>r.json())
+  .then(json=>{
+    DATA = json;
+    buildTabs();
+    renderCategory("general");
+  });
+
+function buildTabs(){
+  tabs.innerHTML="";
+
+  Object.keys(DATA.categories).forEach(cat=>{
+    const b=document.createElement("button");
+    b.textContent=cat;
+    b.onclick=()=>setTab(cat);
+    tabs.appendChild(b);
+  });
+
+  ["Differences","Keywords"].forEach(x=>{
+    const b=document.createElement("button");
+    b.textContent=x;
+    b.onclick=()=>setTab(x);
+    tabs.appendChild(b);
+  });
+
+  highlight();
+}
+
+function setTab(tab){
+  activeTab=tab;
+  search.value="";
+  highlight();
+
+  if(tab==="Differences") renderDifferences();
+  else if(tab==="Keywords") renderKeywords();
+  else renderCategory(tab);
+}
+
+function highlight(){
+  [...tabs.children].forEach(b=>{
+    b.classList.toggle("active", b.textContent===activeTab);
+  });
+}
+
+function renderCategory(cat){
+  content.innerHTML="";
+
+  renderSection("Important", DATA.categories[cat].Important);
+  renderSection("Other", DATA.categories[cat].Other);
+}
+
+function renderSection(title,list){
+  const q=search.value.toLowerCase();
+
+  const sec=document.createElement("div");
+  sec.innerHTML=`<div class="section-title">${title}</div>`;
+
+  list.forEach(w=>{
+    if(q && !w.word.toLowerCase().includes(q) && !w.definition.toLowerCase().includes(q)) return;
+
+    sec.innerHTML+=`
+      <div class="card">
+        <h3>${w.word}</h3>
+        <p>${w.definition}</p>
+      </div>
+    `;
+  });
+
+  content.appendChild(sec);
+}
+
+function renderDifferences(){
+  content.innerHTML="";
+  DATA.Differences.forEach(d=>{
+    content.innerHTML+=`
+      <div class="card">
+        <h3>${d.items}</h3>
+        <p>${d.explanation}</p>
+      </div>
+    `;
+  });
+}
+
+function renderKeywords(){
+  content.innerHTML="";
+  DATA.Keywords.forEach(k=>{
+    content.innerHTML+=`
+      <div class="card">
+        <h3>${k.word}</h3>
+        <p>${k.context}</p>
+      </div>
+    `;
+  });
+}
+
+search.addEventListener("input",()=>{
+  if(DATA.categories[activeTab]) renderCategory(activeTab);
+});
+</script>
+
 </body>
-
 </html>
-
