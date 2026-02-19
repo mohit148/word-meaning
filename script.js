@@ -1,97 +1,139 @@
-let data;
-let activeCategory = "general";
-
 const content = document.getElementById("content");
-const searchInput = document.getElementById("search");
-const categoryBar = document.getElementById("categories");
+const search = document.getElementById("search");
 
+let FULL_DATA = {};
+
+// Load the data
 fetch("data.json")
-  .then(r => r.json())
-  .then(json => {
-    data = json;
-    buildCategories();
-    renderCategory("general");
+  .then((r) => r.json())
+  .then((d) => {
+    FULL_DATA = d;
+    showHome();
+  })
+  .catch((err) => {
+    content.innerHTML = `<div class="word-card">Error loading data. Check if data.json exists.</div>`;
+    console.error(err);
   });
 
-function buildCategories() {
-  categoryBar.innerHTML = "";
+/* ---------- Home: List of Categories ---------- */
 
-  Object.keys(data.categories).forEach(cat => {
-    const btn = document.createElement("button");
-    btn.textContent = cat;
-    btn.onclick = () => renderCategory(cat);
-    categoryBar.appendChild(btn);
-  });
-
-  ["Differences", "Keywords"].forEach(extra => {
-    const btn = document.createElement("button");
-    btn.textContent = extra;
-    btn.onclick = () => renderExtra(extra);
-    categoryBar.appendChild(btn);
-  });
-}
-
-function renderCategory(cat) {
-  activeCategory = cat;
+function showHome() {
+  search.style.display = "none";
+  search.value = "";
   content.innerHTML = "";
 
-  const category = data.categories[cat];
+  // 1. Render standard categories (General, Economics, etc.)
+  if (FULL_DATA.categories) {
+    for (const name in FULL_DATA.categories) {
+      createCategoryCard(name, () =>
+        showCategory(name, FULL_DATA.categories[name]),
+      );
+    }
+  }
 
-  renderSection("Important", category.Important);
-  renderSection("Other", category.Other);
+  // 2. Render the "Differences" section specifically
+  if (FULL_DATA.Differences) {
+    createCategoryCard("Differences", () =>
+      showDifferences(FULL_DATA.Differences),
+    );
+  }
 }
 
+// Helper to create the big buttons on the home screen
+function createCategoryCard(text, action) {
+  const card = document.createElement("div");
+  card.className = "word-card";
+  card.style.cursor = "pointer";
+  card.style.fontSize = "20px";
+  card.style.textAlign = "center";
+  card.style.padding = "20px";
+  card.style.textTransform = "capitalize";
+
+  card.textContent = text;
+  card.onclick = action;
+
+  content.appendChild(card);
+}
+
+/* ---------- Category View (General, Law, Grammar, etc.) ---------- */
+
+function showCategory(name, catData) {
+  search.style.display = "block";
+  search.value = "";
+
+  content.innerHTML = `
+    <button onclick="showHome()" style="margin-bottom:20px; cursor:pointer; padding: 8px 16px; border-radius: 5px; border:none; background:#333; color:white;">
+      ← Back to Categories
+    </button>
+    <h2 style="text-transform: capitalize;">${name}</h2>
+  `;
+
+  // Dynamically loop through sub-sections (Important, Other, preposition, etc.)
+  for (const sectionName in catData) {
+    renderSection(sectionName, catData[sectionName]);
+  }
+}
+
+/* ---------- Render Words inside a Category ---------- */
+
 function renderSection(title, words) {
+  if (!words || !Array.isArray(words)) return;
+
   const section = document.createElement("div");
-  section.innerHTML = `<h2>${title}</h2>`;
+  // Make the section title (e.g., "preposition") look nice
+  section.innerHTML = `<div class="section-title" style="text-transform: capitalize; font-weight: bold; margin-top: 25px;">${title}</div>`;
 
-  words.forEach(w => {
-    if (!matchesSearch(w)) return;
-
+  words.forEach((w) => {
     const card = document.createElement("div");
     card.className = "word-card";
-    card.innerHTML = `<h3>${w.word}</h3><p>${w.definition}</p>`;
+
+    card.innerHTML = `
+      <div class="word">${w.word}</div>
+      <div class="definition">${w.definition}</div>
+    `;
+
     section.appendChild(card);
   });
 
   content.appendChild(section);
 }
 
-function renderExtra(type) {
-  content.innerHTML = `<h2>${type}</h2>`;
+/* ---------- Differences View ---------- */
 
-  if (type === "Differences") {
-    data.Differences.forEach(d => {
-      content.innerHTML += `
-        <div class="word-card">
-          <h3>${d.items}</h3>
-          <p>${d.explanation}</p>
-        </div>`;
-    });
-  }
+function showDifferences(diffData) {
+  search.style.display = "block";
+  search.value = "";
 
-  if (type === "Keywords") {
-    data.Keywords.forEach(k => {
-      content.innerHTML += `
-        <div class="word-card">
-          <h3>${k.word}</h3>
-          <p>${k.context}</p>
-        </div>`;
-    });
-  }
+  content.innerHTML = `
+    <button onclick="showHome()" style="margin-bottom:20px; cursor:pointer; padding: 8px 16px; border-radius: 5px; border:none; background:#333; color:white;">
+      ← Back to Categories
+    </button>
+    <h2>Key Differences</h2>
+  `;
+
+  diffData.forEach((item) => {
+    const card = document.createElement("div");
+    card.className = "word-card";
+
+    // Note: This uses .items and .explanation based on your JSON structure
+    card.innerHTML = `
+  <div class="word">${item.items}</div>
+  <div class="definition">${item.explanation}</div>
+`;
+
+    content.appendChild(card);
+  });
 }
 
-searchInput.addEventListener("input", () => {
-  if (data.categories[activeCategory]) {
-    renderCategory(activeCategory);
-  }
+/* ---------- Search Logic ---------- */
+
+search.addEventListener("input", (e) => {
+  const q = e.target.value.toLowerCase();
+  // Target all cards currently visible in the content div
+  const currentCards = content.querySelectorAll(".word-card");
+
+  currentCards.forEach((card) => {
+    const text = card.innerText.toLowerCase();
+    card.style.display = text.includes(q) ? "block" : "none";
+  });
 });
-
-function matchesSearch(word) {
-  const q = searchInput.value.toLowerCase();
-  if (!q) return true;
-  return (
-    word.word.toLowerCase().includes(q) ||
-    word.definition.toLowerCase().includes(q)
-  );
-}
