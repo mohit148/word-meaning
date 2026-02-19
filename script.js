@@ -1,121 +1,97 @@
-let data = [];
-const container = document.getElementById("words");
-const searchInput = document.getElementById("search");
+let data;
+let activeCategory = "general";
 
-/* Load data */
+const content = document.getElementById("content");
+const searchInput = document.getElementById("search");
+const categoryBar = document.getElementById("categories");
+
 fetch("data.json")
   .then(r => r.json())
   .then(json => {
     data = json;
-    loadFavorites();
-    importFavorites();
-    render(data);
+    buildCategories();
+    renderCategory("general");
   });
 
-/* Render words */
-function render(words) {
-  container.innerHTML = "";
+function buildCategories() {
+  categoryBar.innerHTML = "";
 
-  words.forEach(item => {
+  Object.keys(data.categories).forEach(cat => {
+    const btn = document.createElement("button");
+    btn.textContent = cat;
+    btn.onclick = () => renderCategory(cat);
+    categoryBar.appendChild(btn);
+  });
+
+  ["Differences", "Keywords"].forEach(extra => {
+    const btn = document.createElement("button");
+    btn.textContent = extra;
+    btn.onclick = () => renderExtra(extra);
+    categoryBar.appendChild(btn);
+  });
+}
+
+function renderCategory(cat) {
+  activeCategory = cat;
+  content.innerHTML = "";
+
+  const category = data.categories[cat];
+
+  renderSection("Important", category.Important);
+  renderSection("Other", category.Other);
+}
+
+function renderSection(title, words) {
+  const section = document.createElement("div");
+  section.innerHTML = `<h2>${title}</h2>`;
+
+  words.forEach(w => {
+    if (!matchesSearch(w)) return;
+
     const card = document.createElement("div");
     card.className = "word-card";
-
-    const header = document.createElement("div");
-    header.className = "word-header";
-
-    const title = document.createElement("h3");
-    title.textContent = item.word;
-
-    const star = document.createElement("span");
-    star.className = "star";
-    star.textContent = item.favorite ? "⭐" : "☆";
-    star.onclick = () => toggleFavorite(item.word);
-
-    header.append(title, star);
-    card.appendChild(header);
-
-    item.definitions.forEach((def, i) => {
-      const d = document.createElement("div");
-      d.className = "definition";
-      d.innerHTML = `<b>${i + 1}.</b> ${def.meaning}`;
-
-      const tags = document.createElement("div");
-      tags.className = "tags";
-
-      def.tags.forEach(tag => {
-        const t = document.createElement("span");
-        t.textContent = tag;
-        t.onclick = () => {
-          searchInput.value = tag;
-          render(filterData(tag));
-        };
-        tags.appendChild(t);
-      });
-
-      d.appendChild(tags);
-      card.appendChild(d);
-    });
-
-    container.appendChild(card);
+    card.innerHTML = `<h3>${w.word}</h3><p>${w.definition}</p>`;
+    section.appendChild(card);
   });
+
+  content.appendChild(section);
 }
 
-/* Search */
-searchInput.addEventListener("input", e => {
-  render(filterData(e.target.value));
+function renderExtra(type) {
+  content.innerHTML = `<h2>${type}</h2>`;
+
+  if (type === "Differences") {
+    data.Differences.forEach(d => {
+      content.innerHTML += `
+        <div class="word-card">
+          <h3>${d.items}</h3>
+          <p>${d.explanation}</p>
+        </div>`;
+    });
+  }
+
+  if (type === "Keywords") {
+    data.Keywords.forEach(k => {
+      content.innerHTML += `
+        <div class="word-card">
+          <h3>${k.word}</h3>
+          <p>${k.context}</p>
+        </div>`;
+    });
+  }
+}
+
+searchInput.addEventListener("input", () => {
+  if (data.categories[activeCategory]) {
+    renderCategory(activeCategory);
+  }
 });
 
-function filterData(query) {
-  query = query.toLowerCase();
-  return data.filter(item =>
-    item.word.toLowerCase().includes(query) ||
-    item.definitions.some(d =>
-      d.meaning.toLowerCase().includes(query) ||
-      d.tags.some(t => t.toLowerCase().includes(query))
-    )
+function matchesSearch(word) {
+  const q = searchInput.value.toLowerCase();
+  if (!q) return true;
+  return (
+    word.word.toLowerCase().includes(q) ||
+    word.definition.toLowerCase().includes(q)
   );
-}
-
-/* Favorites */
-function toggleFavorite(word) {
-  const item = data.find(i => i.word === word);
-  item.favorite = !item.favorite;
-  saveFavorites();
-  render(filterData(searchInput.value));
-}
-
-function saveFavorites() {
-  const favs = {};
-  data.forEach(i => favs[i.word] = i.favorite);
-  localStorage.setItem("favorites", JSON.stringify(favs));
-}
-
-function loadFavorites() {
-  const favs = JSON.parse(localStorage.getItem("favorites"));
-  if (!favs) return;
-  data.forEach(i => i.favorite = !!favs[i.word]);
-}
-
-/* Export favorites */
-document.getElementById("exportFavs").onclick = () => {
-  const favWords = data.filter(i => i.favorite).map(i => i.word);
-  const blob = new Blob(
-    [JSON.stringify(favWords, null, 2)],
-    { type: "application/json" }
-  );
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = "favorites.json";
-  a.click();
-};
-
-/* Import favorites.json if exists */
-function importFavorites() {
-  fetch("favorites.json")
-    .then(r => r.json())
-    .then(favs => {
-      data.forEach(i => i.favorite = favs.includes(i.word));
-      saveFavorites();
-    })
-    .catch(() => {});
 }
